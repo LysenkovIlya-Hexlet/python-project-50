@@ -15,15 +15,22 @@ dependencies = [
     "PyYAML>=6.0",
 ]
 
-[tool.hatch.build.targets.wheel]
-packages = ["gendiff"]
-
 [project.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
+
+[tool.hatch]
+build.hooks.vcs.version-file = "gendiff/__init__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+    "pytest>=7.0",
+    "pytest-cov",
+    "flake8"
+]
+
+[tool.hatch.envs.default.scripts]
 lint = "flake8 gendiff tests"
 test = "pytest -v --cov=gendiff"
 
-[tool.uv]
-dev-dependencies = [
-    "pytest>=7.0",
-]
+[tool.hatch.build.targets.wheel]
+packages = ["gendiff"]
