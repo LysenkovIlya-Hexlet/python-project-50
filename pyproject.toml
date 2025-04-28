@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.18.0"]
 build-backend = "hatchling.build"
 
 [project]
@@ -17,9 +17,6 @@ dependencies = [
 
 [project.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
-
-[tool.hatch]
-build.hooks.vcs.version-file = "gendiff/__init__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
