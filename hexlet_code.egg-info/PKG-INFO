@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: hexlet-code
+Version: 0.1.0
+Summary: Compares two configuration files and shows a difference.
+Author-email: Ilya Lysenkov <lysenkov_iv21@mail.ru>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML>=6.0
+
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/LysenkovIlya-Hexlet/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LysenkovIlya-Hexlet/python-project-50/actions)
