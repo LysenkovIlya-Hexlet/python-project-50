@@ -1,0 +1,15 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-8.3.5, pluggy-1.5.0 -- C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Administrator\python-project-50-main
+configfile: setup.cfg
+plugins: cov-6.1.1
+collecting ... collected 5 items
+
+tests/test_formaters.py::test_plain_and_json[JSON-json_right_result-file1.json-file2.json] PASSED [ 20%]
+tests/test_formaters.py::test_plain_and_json[PLAIN-plain_right_result-file1.json-file2.json] PASSED [ 40%]
+tests/test_formaters.py::test_plain_and_json[STYLISH-stylish_right_result-file1.json-file2.json] PASSED [ 60%]
+tests/test_parser.py::test_pars[file1.json-file1.yaml] PASSED            [ 80%]
+tests/test_parser.py::test_pars[file2.json-file2.yml] PASSED             [100%]
+
+============================== 5 passed in 0.14s ==============================
